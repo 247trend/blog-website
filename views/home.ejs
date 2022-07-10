@@ -1,10 +1,13 @@
 <%- include("./partials/header"); %>
 <h1>Home</h1>
 <p><%= homeStartingContent %></p>
+<form action="./compose">
+    <button class="btn btn-light" type="submit">Start Writing</button>
+</form>
 
-<% posts.forEach(post => { %>
+<% foundBlog.forEach(post => { %>
     <h3><%= post.title %></h3>
     <p><%= post.content.substring(0,100)+ "... " %><a href="./posts/<%= post.title %>">Read More</a></p>
-<% }); %>
+<% }); %> 
 
 <%- include("./partials/footer"); %>

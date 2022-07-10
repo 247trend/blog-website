@@ -24,6 +24,7 @@
 }
 
 .footer {
+    position: fixed;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
@@ -33,7 +34,16 @@
 
 .footer p {
 	margin-top: 25px;
-    padding-top: 25px;
 	font-size: 12px;
-  color: #fff;
+    color: #fff;
+}
+
+button[type=submit] {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+button[type=submit]:hover {
+    background-color: #777;
+    color: #fff;
 }
